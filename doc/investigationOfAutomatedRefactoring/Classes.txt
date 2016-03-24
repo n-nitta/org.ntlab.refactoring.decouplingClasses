@@ -1,0 +1,10 @@
+RefactoringContribution
+
+org.eclipse.ltk.core.refactoring.Refactoring
+org.eclipse.ltk.core.refactoring.participants.ProcessorBasedRefactoring
+
+org.eclipse.ltk.core.refactoring.RefactoringDescriptor
+
+org.eclipse.ltk.core.refactoring.participants.RefactoringParticipant
+
+org.eclipse.ltk.core.refactoring.Change

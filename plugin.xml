@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension point="org.eclipse.ui.commands">
+      <category
+         name="Refactoring"
+         id="jp.ac.konan.nittaLab.eclipse.plugin.refactoring.informationHiding.commands.category">
+      </category>
+      <command
+            name="Information Hiding..."
+            id="jp.ac.konan.nittaLab.eclipse.plugin.refactoring.informationHiding.commands.informationHidingCommand"
+            defaultHandler="jp.ac.konan.nittaLab.eclipse.plugin.refactoring.decoupleClasses.handler.DecoupleClassesRefactoringHandler"
+            categoryId="jp.ac.konan.nittaLab.eclipse.plugin.refactoring.informationHiding.commands.category"></command>
+   </extension>
+   
+   <extension point="org.eclipse.ui.menus">
+      <menuContribution locationURI="popup:org.eclipse.ui.popup.any?after=org.eclipse.jdt.ui.refactoring.menu">
+         <menu
+               label="Nitta-Lab Refactoring"
+               id="jp.ac.konan.nittaLab.eclipse.plugin.refactoring.informationHiding.menus.informationHidingMenu">-->
+            <command
+                  commandId="jp.ac.konan.nittaLab.eclipse.plugin.refactoring.informationHiding.commands.informationHidingCommand"
+                  id="jp.ac.konan.nittaLab.eclipse.plugin.refactoring.informationHiding.menus.informationHidingCommand">
+            </command>
+            <visibleWhen>
+               <with variable="activeMenuSelection">
+                  <iterate ifEmpty="false">
+                      <adapt type="org.eclipse.jface.text.ITextSelection"></adapt>
+                  </iterate>
+               </with>
+            </visibleWhen>
+         </menu>
+      </menuContribution>
+   </extension>
+   <extension
+         point="org.eclipse.ltk.core.refactoring.refactoringContributions">
+      <contribution
+            class="jp.ac.konan.nittaLab.eclipse.plugin.refactoring.decoupleClasses.descriptors.DecoupleClassesRefactoringContribution"
+            id="jp.ac.konan.nittaLab.eclipse.plugin.refactoring.decoupleClasses">
+      </contribution>
+   </extension>
+</plugin>

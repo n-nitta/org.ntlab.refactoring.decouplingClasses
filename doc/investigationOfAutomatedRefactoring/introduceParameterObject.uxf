@@ -1,0 +1,569 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="13.3">
+  <zoom_level>9</zoom_level>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>1701</x>
+      <y>756</y>
+      <w>81</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>27;27;72;27</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>2304</x>
+      <y>477</y>
+      <w>369</w>
+      <h>99</h>
+    </coordinates>
+    <panel_attributes>org.eclipse.ltk.core.refactoring.participants.
+ProcessorBasedRefactoring
+--
+ 
+--
++ProcessorBasedRefactoring(processor: RefactoringProcessor)
++createChange(pm: IProgressMonitor): Change</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>2412</x>
+      <y>864</y>
+      <w>351</w>
+      <h>207</h>
+    </coordinates>
+    <panel_attributes>org.eclipse.jdt.core.refactoring.descriptors.
+IntroduceParameterObjectDescriptor
+--
+-fClassName: String
+-fDelegate: boolean
+-fDeprecateDelegate: boolean
+-fGetters: boolean
+-fMethod: IMethod
+-fPackageName: String
+-fParameterName: String
+-fSetters: boolean
+-fTopLevel: boolean
+--
++IntroduceParameterObjectDescriptor()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>2412</x>
+      <y>729</y>
+      <w>351</w>
+      <h>99</h>
+    </coordinates>
+    <panel_attributes>/org.eclipse.jdt.core.refactoring.descriptors./
+/JavaRefactoringDescriptor/
+--
+ 
+--
+#JavaRefactoringDescriptor(id: String)
++createRefactoring(status: RefactoringStatus): Refactoring</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>963</x>
+      <y>279</y>
+      <w>189</w>
+      <h>81</h>
+    </coordinates>
+    <panel_attributes>/org.eclipse.ltk.ui.refactoring./
+/RefactoringWizard/
+--
+ 
+--
+/#addUserInputPages(): void/</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>1773</x>
+      <y>747</y>
+      <w>576</w>
+      <h>117</h>
+    </coordinates>
+    <panel_attributes>org.eclipse.jdt.internal.corext.refactoring.structure.
+IntroduceParameterObjectProcessor
+--
+ 
+--
++IntroduceParameterObjectProcessor(descriptor: IntroduceParameterObjectDescriptor)
++checkFinalConditions(pm: IProgressMonitor, context: CheckConditionsContext): RefactoringStatus
++checkInitialConditions(pm: IProgressMonitor): RefactoringStatus</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>2736</x>
+      <y>936</y>
+      <w>153</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-
+fParameters
+m2=*</panel_attributes>
+    <additional_attributes>27;45;144;45</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>1431</x>
+      <y>729</y>
+      <w>297</w>
+      <h>99</h>
+    </coordinates>
+    <panel_attributes>org.eclipse.jdt.internal.ui.refactoring.
+IntrodudeParameterObjectWizard$
+IntroduceParameterObjectInputPage
+--
+-fProcessor: IntroduceParameterObjectProcessor
+--
++createControl(parent: Composite): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>2421</x>
+      <y>414</y>
+      <w>36</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>27;27;27;63</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>0</x>
+      <y>378</y>
+      <w>396</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>org.eclipse.jdt.internal.corext.refactoring.
+RefactoringExecutionStarter
+--
+ 
+--
+_+startIntroduceParameterObject(method: IMethod, shell: Shell): void_</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>2142</x>
+      <y>486</y>
+      <w>171</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>27;27;162;27</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>2124</x>
+      <y>666</y>
+      <w>54</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>27;27;45;45</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>1026</x>
+      <y>333</y>
+      <w>44</w>
+      <h>98</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>27;27;27;81</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>2304</x>
+      <y>369</y>
+      <w>297</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>/org.eclipse.ltk.core.refactoring/
+/Refactoring/
+--
+ 
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>1809</x>
+      <y>477</y>
+      <w>360</w>
+      <h>99</h>
+    </coordinates>
+    <panel_attributes>/org.eclipse.ltk.core.refactoring.participants./
+/RefactoringProcessor/
+--
+ 
+--
+/+createChange(pm: IProgressMonitor): Change/
++setRefactoring(refactoringProcessorBasedRefactoring): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Note</type>
+    <coordinates>
+      <x>2007</x>
+      <y>936</y>
+      <w>243</w>
+      <h>81</h>
+    </coordinates>
+    <panel_attributes>Refer to
+ParameterObjectFactory.class
+DelegateCreator.class
+ASTRewrite
+for how to create and replace source.</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>1548</x>
+      <y>657</y>
+      <w>44</w>
+      <h>89</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>27;27;27;72</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>1935</x>
+      <y>549</y>
+      <w>36</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>27;27;27;63</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>1431</x>
+      <y>612</y>
+      <w>297</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>/org.eclipse.ltk.ui.refactoring./
+/UserInputWizardPage/
+--
+ 
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>1818</x>
+      <y>612</y>
+      <w>333</w>
+      <h>99</h>
+    </coordinates>
+    <panel_attributes>org.eclipse.jdt.internal.corext.refactoring.structure.
+ChangeSignatureProcessor
+--
+-fBaseCuRewrite: CompilationUnitRewrite
+-fChangeManager: TextChangeManager
+--
++createChange(pm: IProgressMonitor): Change</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>2556</x>
+      <y>666</y>
+      <w>36</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>27;27;27;63</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>1431</x>
+      <y>495</y>
+      <w>297</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>/org.eclipse.ltk.ui.refactoring./
+/RefactoringWizardPage/
+--
+ 
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>1431</x>
+      <y>378</y>
+      <w>297</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>/org.eclipse.jface.wizard./
+/WizardPage/
+--
+ 
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>2142</x>
+      <y>486</y>
+      <w>171</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-
+fProcessor</panel_attributes>
+    <additional_attributes>162;45;27;45</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>2880</x>
+      <y>918</y>
+      <w>252</w>
+      <h>117</h>
+    </coordinates>
+    <panel_attributes>org.eclipse.jdt.core.refactoring.descriptors.
+IntroduceParameterObjectDescriptor$
+Parameter
+--
+-fCreateField: boolean
+-fFieldName: String
+-fIndex: int
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>1548</x>
+      <y>423</y>
+      <w>44</w>
+      <h>89</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>27;27;27;72</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>1935</x>
+      <y>684</y>
+      <w>36</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>27;27;27;63</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>2412</x>
+      <y>612</y>
+      <w>351</w>
+      <h>81</h>
+    </coordinates>
+    <panel_attributes>/org.eclipse.ltk.core.refactoring./
+/RefactoringDescriptor/
+--
+ 
+--
+/+createRefactoring(status: RefactoringStatus): Refactoring/</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>1548</x>
+      <y>288</y>
+      <w>44</w>
+      <h>107</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>27;27;27;90</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>2556</x>
+      <y>801</y>
+      <w>36</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>27;27;27;63</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Note</type>
+    <coordinates>
+      <x>2169</x>
+      <y>702</y>
+      <w>234</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>DynamicValidationRefactoringChange</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>1125</x>
+      <y>279</y>
+      <w>458</w>
+      <h>44</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>27;27;441;27</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Interface</type>
+    <coordinates>
+      <x>1503</x>
+      <y>297</y>
+      <w>144</w>
+      <h>81</h>
+    </coordinates>
+    <panel_attributes>org.eclipse.jface.wizard.
+IWizardPage
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Note</type>
+    <coordinates>
+      <x>1944</x>
+      <y>1026</y>
+      <w>333</w>
+      <h>45</h>
+    </coordinates>
+    <panel_attributes>Processor pattern: IntroduceParameterObjectProcessor
+Non processor pattern: ExtractClassRefactoring</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>756</x>
+      <y>414</y>
+      <w>630</w>
+      <h>99</h>
+    </coordinates>
+    <panel_attributes>org.eclipse.jdt.internal.ui.refactoring.
+IntroduceParameterObjectWizard
+--
+ 
+--
++IntrodeceParameterObjectWizard(processor: IntroduceParameterObjectProcessor, refactoring: Refactoring)
+#addUserInputPages(): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>1548</x>
+      <y>540</y>
+      <w>44</w>
+      <h>89</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>27;27;27;72</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>9</x>
+      <y>225</y>
+      <w>369</w>
+      <h>117</h>
+    </coordinates>
+    <panel_attributes>org.eclipse.jdt.internal.ui.actions.
+IntroduceParameterObjectAction
+--
+ 
+--
++run(selection: ITextSelection): void
+-run(method: IMethod): void
+-getSingleSelectedMethod(selection: ITextSelection): IMethod
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>459</x>
+      <y>252</y>
+      <w>405</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>org.eclipse.ltk.ui.refactoring
+RefactoringWizardOpenOperation
+--
+ 
+--
++RefactoringWizardOpenOperation(wizard: RefactoringWizard)
++getInitialConditionCheckingStatus(): RefactoringStatus
++run(parent: Shell, dialogTitle: String): int
++run(parent: Shell, dialogTitle: String, context: IRunnableContext): int</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>837</x>
+      <y>297</y>
+      <w>143</w>
+      <h>44</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>27;27;126;27</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1719</x>
+      <y>18</y>
+      <w>90</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>SimpleClass</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

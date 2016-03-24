@@ -1,0 +1,613 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="12.0">
+  <zoom_level>8</zoom_level>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>1152</x>
+      <y>480</y>
+      <w>40</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>24;24;24;64</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Interface</type>
+    <coordinates>
+      <x>1056</x>
+      <y>488</y>
+      <w>240</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>org.eclipse.jdt.internal.corext.refactoring.tagging
+IDelegateUpdating</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>1792</x>
+      <y>200</y>
+      <w>208</w>
+      <h>88</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>192;24;24;72</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Interface</type>
+    <coordinates>
+      <x>1904</x>
+      <y>112</y>
+      <w>160</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>java.lang
+Comparable</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>24</x>
+      <y>216</y>
+      <w>280</w>
+      <h>256</h>
+    </coordinates>
+    <panel_attributes>/org.eclipse.ltk.core.refactoring.Change/
+--
+-fParent: Change
+-fIsEnabled: boolean
+--
+#Change()
++getDescriptor(): ChangeDescriptor
+/+getName(): String/
++isEnabled(): boolean
++setEnabled(enabled: boolean): void
++setEnabledShallow(enabled: boolean): void
++getParent(): Change
+~setParent(parent: Change): void
+/+initializeValidationData(pm: IProgressMonitor): void/
+/+isValid(pm: IProgressMonitor): RefactoringStatus/
+/+perform(pm: IProgressMonitor): Change/
++dispose(): void
+/+getModifiedElement(): Object/
++getAffectedObjects(): Object[]
++getAdapter(adapter: Class): Object</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Interface</type>
+    <coordinates>
+      <x>576</x>
+      <y>120</y>
+      <w>176</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>org.eclipse.core.runtime.IAdaptable
+--
++getAdapter(adapter: Class&lt;T&gt;): T</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>2448</x>
+      <y>304</y>
+      <w>336</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>org.eclipse.ltk.core.refactoring.participants
+RenameParticipant
+--
+ 
+--
++getArguments(): RenameArguments
+#initialize(arguments: RefactoringArguments): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>928</x>
+      <y>272</y>
+      <w>264</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>/org.eclipse.ltk.ui.refactoring/
+/RefactoringWizard/
+--
+ 
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>624</x>
+      <y>744</y>
+      <w>40</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>24;24;24;56</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>1648</x>
+      <y>272</y>
+      <w>352</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>org.eclipse.ltk.core.refactoring.resource
+RenameResourceDescriptor
+--
+ 
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>2160</x>
+      <y>304</y>
+      <w>40</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>24;24;24;56</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>960</x>
+      <y>184</y>
+      <w>192</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>/org.eclipse.jface.wizard/
+/Wizard/
+--
+ 
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>640</x>
+      <y>112</y>
+      <w>40</w>
+      <h>88</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>24;24;24;72</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>496</x>
+      <y>280</y>
+      <w>352</w>
+      <h>176</h>
+    </coordinates>
+    <panel_attributes>/org.eclipse.ltk.core.refactoring.Refactoring/
+--
+-fValidationContext: Object
+--
++setValidationContext(context: Object): void
++getValidationContext(): Object
+/+getName(): String/
++getRefactoringTickProvider(): RefactoringTickProvider
+#doGetRefactoringTickProvider(): RefactoringTickProvider
++checkAllConditions(pm: IProgressMonitor): RefactoringStatus
+/+checkInitialConditions(pm: IProgressMonitor): RefactoringStatus/
+/+checkFinalConditions(pm: IProgressMonitor): RefactoringStatus/
+/+createChange(pm: IProgressMonitor): Change/
++getadapter(adapter: Class): Object
++toString(): String</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>896</x>
+      <y>368</y>
+      <w>328</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>org.eclipse.ltk.ui.refactoring.resource
+RenameResourceWizard
+--
+ 
+--
+RenameResourceWizard(resource: IResource)
+#addUserInputPages(): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>1032</x>
+      <y>216</y>
+      <w>40</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>24;24;24;56</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>2592</x>
+      <y>256</y>
+      <w>40</w>
+      <h>64</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>24;24;24;48</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>0</x>
+      <y>680</y>
+      <w>336</w>
+      <h>128</h>
+    </coordinates>
+    <panel_attributes>/org.eclipse.ltk.core.refactoring.resource.RenameResourceChange/
+--
+ 
+--
+RenameResourceChange(resourcePath: IPath, newName: String)
++getDescriptor(): ChangeDescriptor
+#getModifiedResource(): IResource
++getName(): String
++getNewName(): String
++perform(pm: IProgressMonitor): Change
++setDescriptor(descriptor: ChangeDescriptor): void
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>888</x>
+      <y>544</y>
+      <w>560</w>
+      <h>256</h>
+    </coordinates>
+    <panel_attributes>org.eclipse.jdt.internal.corext.refactoring.code
+IntroduceParameterRefactoring
+--
+-fSourceCU: ICompilationUnit
+-fSelectionStart: int
+-fSelectionLength
+-fMethod: IMethod
+-fChandeSignatureRefactoring: Refactoring
+-fChangeSignatureProcessor: ChangeSignatureProcessor
+-fParameter: ParameterInfo
+-fParameterName: String
+-fArguments: JavaRefactoringArguments
+-fSelectedExpression: Expression
+-fExcludedParameterNames: String[]
+--
++IntroduceParameterRefactoring(unit: ICompilationUnit, selectionStart: int, selectionLength: int)
++IntroduceParameterRefactoring(arguments: JavaRefactoringArguments, status: RefactoringStatus)
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>128</x>
+      <y>600</y>
+      <w>40</w>
+      <h>96</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>24;24;24;80</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>488</x>
+      <y>512</y>
+      <w>368</w>
+      <h>256</h>
+    </coordinates>
+    <panel_attributes>/org.eclipse.ltk.core.refactoring.participants.ProcessorBasedRefactoring/
+--
+-fProcessor: RefactoringProcessor
+-fParticipants: List&lt;RefactoringParticipant&gt;
+-fPreChangeParticipants: List&lt;RefactoringParticipant&gt;
+-fTextChangeMap: Map&lt;Object, TextChange&gt;
+/-EMPTY_PARTICIPANTS: List&lt;RefactoringParticipant&gt;/
+--
++ProcessorBasedRefactoring(processor: RefactoringProcessor)
++getProcessor(): RefactoringProcessor
++setProcessor(processor: RefactoringProcessor): void
++isApplicable(): boolean
++getName(): String
++checkInitialConditions(pm: IProgressMonitor): RefactoringStatus
++checkFinalConditions(pm: IProgressMonitor): RefactoringStatus
++createChange(pm: IProgressMonitor): Change
++getTextChange(element: Object): TextChange
++getAdapter(clazz: Class): Object
++toString(): String
+-
+-
+-</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>136</x>
+      <y>120</y>
+      <w>40</w>
+      <h>112</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>24;24;24;96</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Interface</type>
+    <coordinates>
+      <x>976</x>
+      <y>128</y>
+      <w>160</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>org.eclipse.jface.wizard.IWizard</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>2016</x>
+      <y>272</y>
+      <w>352</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>/org.eclipse.jdt.core.refactoring.descriptors/
+/JavaRefactoringDescriptor/
+--
+ 
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>0</x>
+      <y>520</y>
+      <w>328</w>
+      <h>104</h>
+    </coordinates>
+    <panel_attributes>/org.eclipse.ltk.core.refactoring.resource.ResourceChange/
+--
+ 
+--
++getModifiedElement(): Object
+/#getModifiedResource(): IResource/
++initializeValidationData(pm: IProgressMonitor): void
++isValid(pm: IProgressMonitor): RefactoringStatus
++setValidationMethod(validationMethod: int): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>640</x>
+      <y>224</y>
+      <w>40</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>24;24;24;56</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>1032</x>
+      <y>120</y>
+      <w>40</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>24;24;24;64</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>1960</x>
+      <y>200</y>
+      <w>160</w>
+      <h>88</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>24;24;144;72</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>128</x>
+      <y>448</y>
+      <w>40</w>
+      <h>88</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>24;24;24;72</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>632</x>
+      <y>432</y>
+      <w>448</w>
+      <h>128</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>24;24;432;112</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Interface</type>
+    <coordinates>
+      <x>72</x>
+      <y>128</y>
+      <w>176</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>org.eclipse.core.runtime.IAdaptable
+--
++getAdapter(adapter: Class&lt;T&gt;): T</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>1960</x>
+      <y>104</y>
+      <w>40</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>24;24;24;64</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>632</x>
+      <y>432</y>
+      <w>40</w>
+      <h>96</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>24;24;24;80</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>1848</x>
+      <y>168</y>
+      <w>272</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>/org.eclipse.ltk.core.refactoring/
+/RefactoringDescriptor/
+--
+ 
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>552</x>
+      <y>184</y>
+      <w>216</w>
+      <h>64</h>
+    </coordinates>
+    <panel_attributes>/org.eclipse.core.runtime.PlatformObject/
+--
+-fProcessor: RenameProcessor
+--
++PlatformObject()
++getAdapter(adapter: Class&lt;T&gt;): T</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>488</x>
+      <y>800</y>
+      <w>336</w>
+      <h>64</h>
+    </coordinates>
+    <panel_attributes>org.eclipse.ltk.core.refactoring.participants.RenameRefactoring
+--
+-fProcessor: RenameProcessor
+--
++RenameRefactoring(processor: RenameProcessor)
++getProcessor(): RefactoringProcessor</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>2408</x>
+      <y>112</y>
+      <w>536</w>
+      <h>168</h>
+    </coordinates>
+    <panel_attributes>/org.eclipse.ltk.core.refactoring.participants/
+/RefactoringParticipant/
+--
+ 
+--
+/+checkConditions(pm: IProgressMonitor, context: CheckConditionsContext): RefactoringStatus/
+/+createChange(pm: IprogressMonitor): Change/
++createPreChbange(pm: IProgressMonitor): Change
+/+getName(): String/
++getProcessor(): RefactoringProcessor
++getTextChange(element: Object): TextChange
+/#initialize(element: Object): boolean/
+/#initialize(arguments: RefactoringArguments): boolean/
++initialize(processor: RefactoringProcessor, element: Object, arguments: RefactoringArguments): boolean</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>1032</x>
+      <y>304</y>
+      <w>40</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>24;24;24;64</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>1288</x>
+      <y>128</y>
+      <w>384</w>
+      <h>104</h>
+    </coordinates>
+    <panel_attributes>org.eclipse.ltk.ui.refactoring
+RefactoringWizardOpenOperation
+--
+ 
+--
++RefactoringWizardOpenOperation(wizard: RefactoringWizard)
++getInitialConditionCheckingStatus(): RefactoringStatus
++run(parent: Shell, dialogTitle: String): int
++run(parent: Shell, dialogTitle: String, context: IRunnableContext): int</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>2016</x>
+      <y>360</y>
+      <w>352</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>org.eclipse.jdt.core.refactoring.descriptors
+ChangeMethodSignatureDescriptor
+--
+ 
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
